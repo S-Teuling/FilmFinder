@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Movie Finder</title>
+    <script defer src="./moviedata.js"></script>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="body" class="white-background">
+    <header id="main-header" class="main-header">
+      <h1>Movie Finder</h1>
+    </header>
+    <nav id="navigation" class="navigation">
+      <div class="radio-btns">
+        <div>
+          <input type="radio" id="latest" name="movie" value="latest" />
+          <label>Latest Movie; 2014 or newer</label>
+        </div>
+        <div>
+          <input type="radio" id="avenger" name="movie" value="avenger" />
+          <label>Avenger Movies</label>
+        </div>
+        <div>
+          <input type="radio" id="xmen" name="movie" value="x-men" />
+          <label>X-Men Movies</label>
+        </div>
+        <div>
+          <input type="radio" id="princess" name="movie" value="princess" />
+          <label>Princess Movies</label>
+        </div>
+        <div>
+          <input type="radio" id="batman" name="movie" value="batman" />
+          <label>Batman Movies</label>
+        </div>
+      </div>
+    </nav>
+    <div id="searchContainer" class="searchContainer">
+      <input
+        type="text"
+        name="searchBar"
+        id="searchBar"
+        placeholder="search for a movie"
+      />
+    </div>
+    <main id="main" class="main">
+      <p id="output"></p>
+      <ul id="list" class="list"></ul>
+    </main>
+  </body>
+</html>
